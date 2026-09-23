@@ -24,14 +24,7 @@ nav{height:78px;display:flex;justify-content:space-between;align-items:center;po
 .hero-grid{position:relative;z-index:3;display:grid;grid-template-columns:.9fr 1.1fr;align-items:center;min-height:calc(96vh - 78px)}
 .hero h1{font-weight:400;font-size:clamp(66px,7vw,112px);line-height:.98;letter-spacing:-.055em;margin:0 0 26px;text-shadow:2px 1px 0 rgba(220,91,128,.18)}
 .eyebrow{font:500 11px/1.8 Arial,sans-serif;letter-spacing:.4em;text-transform:uppercase;opacity:.68}.hero p{font-size:18px;margin:28px 0 34px}.btn{display:inline-flex;justify-content:center;align-items:center;gap:42px;min-width:250px;padding:17px 28px;border-radius:999px;background:#173b3b;color:#fff;text-decoration:none;font-size:18px;transition:.35s}.btn:hover{background:#294e49}.arrow{transition:.35s}.btn:hover .arrow{transform:translateX(6px)}
-.hero-art{position:relative;min-height:680px}.riso-bubble{position:absolute;width:min(625px,92%);aspect-ratio:1;right:2%;top:48%;transform:translateY(-50%);border-radius:50%;background:
-radial-gradient(circle at 26% 22%,rgba(255,240,207,.8),transparent 11%),
-radial-gradient(circle at 45% 45%,rgba(86,174,180,.7),transparent 46%),
-radial-gradient(circle at 75% 68%,rgba(220,102,151,.68),transparent 30%),
-linear-gradient(145deg,rgba(72,148,121,.8),rgba(246,164,111,.72));
-border:8px solid rgba(235,120,105,.55);box-shadow:7px 5px 0 rgba(19,94,121,.18);overflow:hidden}
-.riso-bubble:after{content:"";position:absolute;inset:0;background-image:radial-gradient(circle,#0d5c77 0 1px,transparent 1.5px);background-size:4px 4px;opacity:.17;mix-blend-mode:multiply}
-.figure{position:absolute;z-index:2;width:42%;height:70%;left:48%;bottom:2%;transform:translateX(-50%) rotate(-4deg);background:#075273;opacity:.88;clip-path:polygon(46% 0,64% 4%,77% 17%,75% 31%,66% 40%,76% 52%,96% 67%,100% 100%,6% 100%,18% 69%,37% 54%,27% 46%,30% 30%,34% 14%)}.hands{position:absolute;z-index:3;width:19%;height:27%;left:29%;top:44%;background:#075273;opacity:.9;border-radius:60% 30% 55% 30%;transform:rotate(-28deg)}
+.hero-art{position:relative;min-height:680px}.riso-bubble{position:absolute;width:min(625px,92%);aspect-ratio:1;right:2%;top:48%;transform:translateY(-50%);background:transparent;border:0;box-shadow:none;overflow:visible}.riso-bubble img{display:block;width:100%;height:100%;object-fit:contain;filter:drop-shadow(7px 8px 12px rgba(19,94,121,.16))}
 .star{position:absolute;right:0;top:16%;font-size:42px;color:#f3d9c5}.side{position:absolute;right:0;bottom:11%;text-align:right;color:#f6eadc;font:500 10px/2.1 Arial,sans-serif;letter-spacing:.28em}
 .section{border-top:1px solid rgba(255,255,255,.75)}
 .question{position:relative;padding:95px 0;overflow:hidden;background:radial-gradient(circle at 5% 20%,rgba(44,141,187,.55),transparent 25%),radial-gradient(circle at 17% 65%,rgba(223,103,159,.25),transparent 22%),var(--paper2)}
@@ -58,7 +51,7 @@ footer{padding:27px 0;display:flex;justify-content:space-between;font:500 10px A
 <nav><div class="brand"><span>CHIKAIMA x Soular.a</span><i></i><span>靈魂座標工作坊</span></div><div class="navlinks"><a href="#about">ABOUT</a><a href="#flow">FLOW</a><a href="#info">INFO</a><a class="outline" href="#signup">立即報名</a></div></nav>
 <div class="hero-grid">
 <div class="reveal"><h1>感受自己<br>可以很好玩</h1><div class="eyebrow">IT CAN BE FUN<br>TO FEEL YOURSELF</div><p>從香氣開始，<br>用感覺做選擇，<br>在好玩的體驗裡，<br>重新認識自己。</p><a class="btn" href="#signup">立即報名 <span class="arrow">→</span></a></div>
-<div class="hero-art reveal"><div class="riso-bubble"><div class="figure"></div><div class="hands"></div></div><div class="star">✦</div><div class="side">SCENT<br>CRYSTAL<br>TOTEM<br>COLOR<br>CONNECTION</div></div>
+<div class="hero-art reveal"><div class="riso-bubble"><img src="assets/soul-bubble-1500.png" alt="靈魂座標主視覺"></div><div class="star">✦</div><div class="side">SCENT<br>CRYSTAL<br>TOTEM<br>COLOR<br>CONNECTION</div></div>
 </div></div>
 </header>
 
