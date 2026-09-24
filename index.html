@@ -211,6 +211,11 @@ signupForm.addEventListener("submit",async e=>{
   const payload=Object.fromEntries(new FormData(signupForm).entries());
   const photoConsent=payload.photoConsent||"未填寫";
   const originalNotes=(payload.notes||"").trim();
+  // 對應 Google Apps Script 實際寫入試算表的欄位名稱
+  payload.ig=payload.instagram||"";
+  payload.consent=photoConsent;
+  payload.note=originalNotes;
+  payload.session=payload.event||"";
   payload.portraitConsent=photoConsent;
   payload["肖像授權"]=photoConsent;
   payload.notes=`肖像授權：${photoConsent}${originalNotes?`\n其他備註：${originalNotes}`:""}`;
